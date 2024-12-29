@@ -5,6 +5,7 @@
     row-gap: 1%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 22%;
 }
 
 .outer-controls{
@@ -35,7 +36,13 @@
 }
 
 .button-container{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+button{
+    padding: 2%;
 }
 
 #fizzbuzz-container > div {
@@ -92,4 +99,15 @@ input{
     margin-left: 2%;
     margin-right: 10%;
     margin-bottom: 5%;
+}
+
+footer{
+    border: 3px solid rgb(105, 25, 179);
+    border-radius: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(25, 6, 43);
+    color: rgb(219, 218, 196);
 }
