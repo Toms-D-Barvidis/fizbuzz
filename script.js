@@ -13,15 +13,19 @@ function getValues() {
         const newDiv = document.createElement("div");
         if ((i % fizzValue == 0) && (i % buzzValue == 0)){
             newDiv.className = "fizzbuzz";
+            newDiv.innerHTML = "FizzBuzz" + "<br>" + "(" + i + ")"
         } else if (i % fizzValue == 0) {
             newDiv.className = "fizz";
+            newDiv.innerHTML = "Fizz" + "<br>" + " (" + i + ")"
         } else if (i % buzzValue == 0) {
             newDiv.className = "buzz";
+            newDiv.innerHTML = "Buzz" + "<br>" + " (" + i + ")"
         } else {
             newDiv.className = "nofizzbuzz";
+            newDiv.innerHTML = i;
         }
-        
-        newDiv.innerHTML = i;
+
+        newDiv.id = "fizzbuzzid" + i;
         fizzBuzzDiv.appendChild(newDiv);
     }
 }

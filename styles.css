@@ -1,11 +1,12 @@
 #fizzbuzz-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    column-gap: 1%;
-    row-gap: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 5px;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 22%;
+    justify-items: center;
 }
 
 .outer-controls{
@@ -49,7 +50,9 @@ button{
     text-align: center;
     border-radius: 12px;
     font-size: large;
-    padding: 5%;
+    height: 100px;
+    align-content: center;
+    width: 100px;
 }
 
 .fizzbuzz {
@@ -60,21 +63,21 @@ button{
 }
 
 .fizz {
-    background-color: rgb(0, 40, 108);
+    background-color: rgb(7, 78, 129);
     font-weight: bold;
     color: rgb(212, 212, 190);
     border: 3px solid rgb(0, 27, 71);
 }
 
 .buzz {
-    background-color: rgb(112, 0, 0);
+    background-color: rgb(141, 8, 8);
     color: rgb(197, 195, 255);
     font-weight: bold;
     border: 3px solid rgb(58, 14, 14);
 }
 
 .nofizzbuzz {
-    background-color: rgb(66, 66, 61);
+    background-color: rgb(95, 95, 95);
     color: rgb(200, 198, 167);
     font-weight: bold;
     border: 3px solid rgb(34, 34, 33);
