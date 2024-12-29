@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div>
+             <label for="starting-value">Starting value: </label>
+             <input type="number" name="starting-value" id="starting-value" min="1" value="1">
+             <label for="end-value">End value: </label>
+             <input type="number" name="end-value" id="end-value" min="2" value="100"> <br>
+             <label for="fizz-value">Fizz: </label>
+             <input type="number" name="fizz-value" id="fizz-value" value="3" min="2">
+             <label for="buzz-value">Buzz: </label>
+             <input type="number" name="buzz-value" id="buzz-value" value="5" min="3">
+             <br>
+             <button name="submit" id="submit" onclick="getValues()">Submit</button>
+             <hr>
+        </div>
+        <div id="fizzbuzz-container">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

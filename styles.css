@@ -1,0 +1,29 @@
+#fizzbuzz-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 1%;
+    row-gap: 1%;
+
+}
+
+#fizzbuzz-container > div {
+    text-align: center;
+    font-size: large;
+    padding: 5%;
+}
+
+.fizzbuzz {
+    background-color: magenta;
+}
+
+.fizz {
+    background-color: cyan;
+}
+
+.buzz {
+    background-color: red;
+}
+
+.nofizzbuzz {
+    background-color: gray;
+}
